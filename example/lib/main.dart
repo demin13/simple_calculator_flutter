@@ -10,13 +10,13 @@ class FlutterCalculatorExample extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Calculator Example',
+      title: 'Calculator',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.deepOrange,
       ),
       home: Scaffold(
         appBar: AppBar(
-          title: Text('Flutter Calculator Example'),
+          title: Text('Calculator'),
         ),
         body: CalculatorExamplePage(),
       ),

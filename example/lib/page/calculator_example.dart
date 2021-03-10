@@ -8,24 +8,24 @@ class CalculatorExamplePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return DefaultTabController(
-      length: 2,
+      length: 1,
       child: Scaffold(
         appBar: TabBar(
-          labelColor: Theme.of(context).primaryColor,
-          unselectedLabelColor: Colors.grey,
+          labelColor: Theme.of(context).primaryColorDark,
+          unselectedLabelColor: Colors.blueGrey,
           tabs: [
             Tab(
-              text: 'Embedded',
+              text: 'Created By Shekhar',
             ),
-            Tab(
+            /*Tab(
               text: 'Dialog',
-            ),
+            ),*/
           ],
         ),
         body: TabBarView(
           children: [
             CalculatorExampleEmbeddedPage(),
-            CalculatorExampleDialogPage(),
+            //CalculatorExampleDialogPage(),
           ],
         ),
       ),
